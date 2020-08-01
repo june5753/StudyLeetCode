@@ -2,6 +2,6 @@
 .idea/*
 .xml
 .iml
- out/
  .class
  .kotlin_module
+/out/
