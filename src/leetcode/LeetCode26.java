@@ -8,6 +8,7 @@ public class LeetCode26 {
 
     /**
      * 测试类
+     * @param args
      */
     public static void main(String[] args) {
 
