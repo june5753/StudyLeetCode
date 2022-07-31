@@ -15,8 +15,8 @@ package leetcode;
  */
 public class LeeCode0106 {
     public static void main(String[] args) {
-        String s1 = "aabcccccaaa";
-        String s2 ="abbccd";
+        String s1 = "aabcccccaa"; //a2b1c5a2
+        String s2 = "abbccd";//a1b2c2d1
         LeeCode0106 leeCode0106 = new LeeCode0106();
         System.out.println(leeCode0106.compressString(s1));
         System.out.println(leeCode0106.compressString(s2));
@@ -26,7 +26,6 @@ public class LeeCode0106 {
         if (s == null || s.length() < 2) {
             return s;
         }
-
         StringBuilder sb = new StringBuilder().append(s.charAt(0));
         int number = 1;
 
@@ -38,6 +37,7 @@ public class LeeCode0106 {
                 number = 1;
             }
         }
-        return sb.append(number).length() < s.length() ? sb.toString() : s;
+        return sb.append(number).toString();
+//        return sb.append(number).length() < s.length() ? sb.toString() : s;
     }
 }
